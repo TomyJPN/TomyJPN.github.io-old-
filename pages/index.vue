@@ -1,6 +1,9 @@
 <template>
+  <div class="main">
+    <my-header></my-header>
   <section class="container">
-    <div>
+    Tomy's Portfolio Site
+    <!--<div>
       <app-logo/>
       <h1 class="title">
         tomyport
@@ -18,27 +21,42 @@
           target="_blank"
           class="button--grey">GitHub</a>
       </div>
-    </div>
+    </div>-->
   </section>
+    <my-footer></my-footer>
+  </div>
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import MyHeader from '~/components/header.vue'
+import MyFooter from '~/components/footer.vue'
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    MyHeader,
+    MyFooter
   }
 }
 </script>
 
 <style>
+  .main{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+  }
+
 .container {
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: darkslategray;
+  font-size: 50pt;
+  color: whitesmoke;
 }
 
 .title {
