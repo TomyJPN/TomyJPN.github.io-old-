@@ -49,7 +49,7 @@ export default {
   }
 
 .container {
-  min-height: 95vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;

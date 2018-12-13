@@ -13,9 +13,10 @@
 
 <style scoped>
 .main{
+  position: sticky;
   background: #47494e;
   text-align: center;
-  height: 100px;
+  height: 50px;
   bottom:0;
 }
 
