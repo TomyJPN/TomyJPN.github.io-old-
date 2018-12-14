@@ -2,8 +2,10 @@
   <div class="main">
     <my-header></my-header>
     <section class="container">
-      <router-view></router-view>
       Tomy's Portfolio Site
+      <router-view class="view one"></router-view>
+      <router-view class="view two" name="a"></router-view>
+      <router-view class="view three" name="b"></router-view>
       <!--<div>
         <app-logo/>
         <h1 class="title">
@@ -34,19 +36,15 @@
   import MyFooter from '~/components/footer.vue'
   import Profile from '~/components/profile.vue'
 
-  /*const router=new VueRouter({
-    routers // `routes: routes` の短縮表記
-  })*/
-
   export default {
     components: {
       AppLogo,
       MyHeader,
       MyFooter
     },
-    routes:[
+    /*routes:[
       {path:'/profile',component:Profile}
-    ]
+    ]*/
   }
 </script>
 
