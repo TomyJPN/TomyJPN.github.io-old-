@@ -1,5 +1,5 @@
 {
-  "name": "tomyport",
+  "name": "port3",
   "version": "1.0.0",
   "description": "Nuxt.js project",
   "author": "TomyJPN <masaya120331@gmail.com>",
@@ -13,8 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^2.3.4",
-    "vue-router": "^3.0.2"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
