@@ -3,28 +3,6 @@
     <my-header></my-header>
     <section class="container">
       Tomy's Portfolio Site
-      <router-view class="view one"></router-view>
-      <router-view class="view two" name="a"></router-view>
-      <router-view class="view three" name="b"></router-view>
-      <!--<div>
-        <app-logo/>
-        <h1 class="title">
-          tomyport
-        </h1>
-        <h2 class="subtitle">
-          tomy's portfolio site.(Under construction)
-                </h2>
-        <div class="links">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            class="button--green">Documentation</a>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            class="button--grey">GitHub</a>
-        </div>
-      </div>-->
     </section>
     <my-footer></my-footer>
   </div>
@@ -41,10 +19,7 @@
       AppLogo,
       MyHeader,
       MyFooter
-    },
-    /*routes:[
-      {path:'/profile',component:Profile}
-    ]*/
+    }
   }
 </script>
 

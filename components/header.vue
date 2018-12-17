@@ -1,14 +1,12 @@
 <template>
   <div class="main">
-    <router-link tag="div" to="/">
-    </router-link>
     <div class="header-navi">
       <ul>
-        <router-link to="/" class="square_btn">top</router-link>
-        <router-link to="/profile" class="square_btn">profile</router-link>
-        <router-link to="/language" class="square_btn">language</router-link>
-        <router-link to="/works" class="square_btn">works</router-link>
-        <router-link to="/link" class="square_btn">link</router-link>
+        <button v-on:click="index" class="square_btn">top</button>
+        <button to="/" v-on:click="profile" class="square_btn">profile</button>
+        <button to="/" v-on:click="language" class="square_btn">language</button>
+        <button to="/" v-on:click="works" class="square_btn">works</button>
+        <button to="/" v-on:click="link" class="square_btn">link</button>
       </ul>
     </div>
   </div>
@@ -16,7 +14,24 @@
 
 <script>
     export default {
-        name: "myheader"
+        name: "myheader",
+        showNum:1,
+      methods:{
+        index(){
+          this.$emit("index");
+        },
+        profile(){
+          this.$emit("profile")},
+        language(){
+          this.$emit("language")
+        },
+        works(){
+          this.$emit("works")
+        },
+        link(){
+          this.$emit("link")
+        }
+      }
     }
 </script>
 
