@@ -1,8 +1,10 @@
 <template>
   <div class="main">
-    <my-header ></my-header>
-    <section class="container">
-      <div v-if="showNum===1" class="index">Tomy's Portfolio Site</div>
+    <my-header />
+    <section class="contents">
+      <div
+        v-if="showNum===1"
+        class="index">Tomy's Portfolio Site</div>
       <div v-if="showNum===2"><profile class="item">profile</profile></div>
       <div v-if="showNum===3">a</div>
       <div v-if="showNum===4">sfae</div>
@@ -12,14 +14,12 @@
 </template>
 
 <script>
-  import AppLogo from '~/components/AppLogo.vue'
   import MyHeader from '~/components/header.vue'
   import MyFooter from '~/components/footer.vue'
   import Profile from '~/components/profile.vue'
 
   export default {
     components: {
-      AppLogo,
       MyHeader,
       MyFooter,
       Profile,
@@ -40,24 +40,21 @@
 
 <style>
   .main{
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
+    background-color: darkslategray;
   }
 
-  .container {
-    height: 100%;
+  .contents {
+    height: 92vh;
     background-color: darkslategray;
     color: whitesmoke;
-    padding-bottom: 100px;
   }
 
   .index{
-    background-color: cadetblue;
+    padding-top: 30vh;
     text-align: center;
     align-items: center;
     font-size: 50pt;
-    margin-top: 30vh;
+    width: 100%;
   }
 
   .item{

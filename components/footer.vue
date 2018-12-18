@@ -7,7 +7,7 @@
 
 <script>
     export default {
-        name: "myfooter"
+        name: "Myfooter"
     }
 </script>
 
