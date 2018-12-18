@@ -1,13 +1,14 @@
 <template>
   <div class="main">
     <div class="header-navi">
-      <ul>
+
+      <!--ul>
         <button v-on:click="index" class="square_btn">top</button>
         <button to="/" v-on:click="profile" class="square_btn">profile</button>
         <button to="/" v-on:click="language" class="square_btn">language</button>
         <button to="/" v-on:click="works" class="square_btn">works</button>
         <button to="/" v-on:click="link" class="square_btn">link</button>
-      </ul>
+      </ul-->
     </div>
   </div>
 </template>
@@ -15,23 +16,23 @@
 <script>
     export default {
         name: "myheader",
-        showNum:1,
-      methods:{
+      /*methods:{
         index(){
-          this.$emit("index");
+          this.$parent.showNum=1;
         },
-        profile(){
-          this.$emit("profile")},
+        profile() {
+          this.$parent.showNum = 2;
+        },
         language(){
-          this.$emit("language")
+          this.$parent.showNum = 3;
         },
         works(){
-          this.$emit("works")
+          this.$parent.showNum = 4;
         },
         link(){
-          this.$emit("link")
+          this.$parent.showNum = 5;
         }
-      }
+      }*/
     }
 </script>
 
@@ -47,6 +48,7 @@
     top: 0;
     padding-top:8px;
     font-size:18pt;
+    background-color: coral;
   }
   ul {
     display: flex;

@@ -18,18 +18,15 @@
 
 <script>
     export default {
-        name: "profile",
-      data(){
-          isActive:'1'
-      },
+      name: "profile",
       methods:{
-          isSelect:function(num){
-            this.isActive=num;
-          }
       }
     }
 </script>
 
 <style scoped>
-
+.main{
+  background-color: rgba(255,255,255,0.6);
+  color: #3d3d3d;
+}
 </style>

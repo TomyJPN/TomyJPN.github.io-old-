@@ -1,10 +1,13 @@
 <template>
   <div class="main">
-    <my-header></my-header>
+    <my-header ></my-header>
     <section class="container">
-      Tomy's Portfolio Site
+      <div v-if="showNum===1" class="index">Tomy's Portfolio Site</div>
+      <div v-if="showNum===2"><profile class="item">profile</profile></div>
+      <div v-if="showNum===3">a</div>
+      <div v-if="showNum===4">sfae</div>
     </section>
-    <my-footer></my-footer>
+    <!--my-footer></my-footer-->
   </div>
 </template>
 
@@ -18,9 +21,21 @@
     components: {
       AppLogo,
       MyHeader,
-      MyFooter
+      MyFooter,
+      Profile,
+
+    },
+    data(){
+      return {
+        showNum: 1
+      }
     }
   }
+
+  document.onscroll = function(e){
+    this.position = document.documentElement.scrollTop || document.body.scrollTop;
+  }
+
 </script>
 
 <style>
@@ -31,14 +46,22 @@
   }
 
   .container {
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    height: 100%;
     background-color: darkslategray;
-    font-size: 50pt;
     color: whitesmoke;
+    padding-bottom: 100px;
+  }
+
+  .index{
+    background-color: cadetblue;
+    text-align: center;
+    align-items: center;
+    font-size: 50pt;
+    margin-top: 30vh;
+  }
+
+  .item{
+    height: 80%;
   }
 
   .title {
