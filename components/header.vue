@@ -6,20 +6,17 @@
         <button 
           class="square_btn" 
           @click="index">top</button>
-        <button 
-          to="/" 
+        <button
           class="square_btn" 
           @click="profile">profile</button>
         <!--button
           to="/" 
           class="square_btn" 
           @click="language">language</button-->
-        <button 
-          to="/"
+        <button
           class="square_btn" 
           @click="works">works</button>
-        <button 
-          to="/"
+        <button
           class="square_btn" 
           @click="link">link</button>
       </ul>
@@ -66,6 +63,10 @@
   ul {
     display: flex;
     justify-content: space-around;
+  }
+  button{
+    border:0;
+    background-color: rgba(0,0,0,0);
   }
   .square_btn{
     position: relative;

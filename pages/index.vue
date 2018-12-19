@@ -4,7 +4,9 @@
       <my-header />
       <div
         v-if="showNum===1"
-        class="index">Tomy's Portfolio Site</div>
+        class="index">Tomy's Portfolio Site
+        <div class="sub">～Toriaezu Making～</div>
+      </div>
       <div v-if="showNum===2"><profile class="item"/></div>
       <!--div v-if="showNum===3"><Works class="item"/></div-->
       <div v-if="showNum===4"><Works class="item"/></div>
@@ -69,6 +71,10 @@
     margin-right: 30px;
     border-radius:5px;
     padding:20px 20px 20px 20px;
+  }
+
+  .sub{
+    font-size: 24px;
   }
 
   .title {
