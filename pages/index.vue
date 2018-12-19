@@ -1,13 +1,15 @@
 <template>
   <div class="main">
-    <my-header />
     <section class="contents">
+      <my-header />
       <div
         v-if="showNum===1"
         class="index">Tomy's Portfolio Site</div>
-      <div v-if="showNum===2"><profile class="item">profile</profile></div>
-      <div v-if="showNum===3">a</div>
-      <div v-if="showNum===4">sfae</div>
+      <div v-if="showNum===2"><profile class="item"/></div>
+      <!--div v-if="showNum===3"><Works class="item"/></div-->
+      <div v-if="showNum===4"><Works class="item"/></div>
+      <div v-if="showNum===5"><Links class="item"/></div>
+
     </section>
     <!--my-footer></my-footer-->
   </div>
@@ -17,13 +19,16 @@
   import MyHeader from '~/components/header.vue'
   import MyFooter from '~/components/footer.vue'
   import Profile from '~/components/profile.vue'
+  import Works from '~/components/works.vue'
+  import Links from '~/components/links.vue'
 
   export default {
     components: {
       MyHeader,
       MyFooter,
       Profile,
-
+      Works,
+      Links
     },
     data(){
       return {
@@ -44,7 +49,7 @@
   }
 
   .contents {
-    height: 92vh;
+    height: 100vh;
     background-color: darkslategray;
     color: whitesmoke;
   }
@@ -52,13 +57,18 @@
   .index{
     padding-top: 30vh;
     text-align: center;
-    align-items: center;
+    /*align-items: center;*/
     font-size: 50pt;
-    width: 100%;
   }
 
   .item{
-    height: 80%;
+    background-color: #F5F5F5;
+    color: #3d3d3d;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius:5px;
+    padding:20px 20px 20px 20px;
   }
 
   .title {

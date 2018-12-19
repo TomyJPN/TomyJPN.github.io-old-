@@ -10,10 +10,10 @@
           to="/" 
           class="square_btn" 
           @click="profile">profile</button>
-        <button 
+        <!--button
           to="/" 
           class="square_btn" 
-          @click="language">language</button>
+          @click="language">language</button-->
         <button 
           to="/"
           class="square_btn" 
