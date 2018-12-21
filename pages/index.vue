@@ -23,6 +23,14 @@
   import Profile from '~/components/profile.vue'
   import Works from '~/components/works.vue'
   import Links from '~/components/links.vue'
+  import Vue from 'vue'
+  import VueAnalytics from 'vue-analytics'
+
+  Vue.use(VueAnalytics, {
+    id: 'UA-131283692-1'
+  })
+
+  document.title="Tomy's Portfolio site"
 
   export default {
     components: {

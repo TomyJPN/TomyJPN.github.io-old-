@@ -1,5 +1,5 @@
 {
-  "name": "Tomy's Portfolio Site",
+  "name": "port2",
   "version": "1.0.0",
   "description": "My groovy Nuxt.js project",
   "author": "TomyJPN",
@@ -13,16 +13,18 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "bootstrap": "^4.1.3",
+    "bootstrap-vue": "^2.0.0-beta",
     "cross-env": "^5.2.0",
     "nuxt": "^2.0.0",
-    "bootstrap-vue": "^2.0.0-beta",
-    "bootstrap": "^4.1.3"
+    "vue": "^2.5.21",
+    "vue-analytics": "^5.16.1"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0",
     "babel-eslint": "^8.2.1",
     "eslint": "^5.0.1",
     "eslint-loader": "^2.0.0",
-    "eslint-plugin-vue": "^4.0.0"
+    "eslint-plugin-vue": "^4.0.0",
+    "nodemon": "^1.11.0"
   }
 }
