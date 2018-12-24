@@ -1,20 +1,20 @@
 <template>
-  <div class="main">
-    <section class="contents">
-      <my-header />
-      <div
-        v-if="showNum===1"
-        class="index">Tomy's Portfolio Site
-        <div class="sub">～Toriaezu Making～</div>
-      </div>
-      <div v-if="showNum===2"><profile class="item"/></div>
-      <!--div v-if="showNum===3"><Works class="item"/></div-->
-      <div v-if="showNum===4"><Works class="item"/></div>
-      <div v-if="showNum===5"><Links class="item"/></div>
 
-    </section>
-    <!--my-footer></my-footer-->
+  <div class="main">
+    <my-header />
+    <div
+      v-if="showNum===1"
+      class="index">Tomy's Portfolio Site
+      <div class="sub">～Toriaezu Making～</div>
+    </div>
+    <div v-if="showNum===2"><profile class="item"/></div>
+    <!--div v-if="showNum===3"><Works class="item"/></div-->
+    <div v-if="showNum===4"><Works class="item"/></div>
+    <div v-if="showNum===5"><Links class="item"/></div>
+
   </div>
+  <!--my-footer></my-footer-->
+
 </template>
 
 <script>
@@ -47,25 +47,21 @@
     }
   }
 
-  document.onscroll = function(e){
-    this.position = document.documentElement.scrollTop || document.body.scrollTop;
-  }
+
 
 </script>
 
 <style>
-  .main{
-    background-color: darkslategray;
-  }
-
-  .contents {
-    height: 100vh;
+  .main {
+    /*height: 100vh;*/
+    bottom: 0;
+    margin: auto;
     background-color: darkslategray;
     color: whitesmoke;
   }
 
   .index{
-    padding-top: 30vh;
+    margin-top: 20vh;
     text-align: center;
     /*align-items: center;*/
     font-size: 50pt;
@@ -75,8 +71,9 @@
     background-color: #F5F5F5;
     color: #3d3d3d;
     margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius:5px;
     padding:20px 20px 20px 20px;
   }

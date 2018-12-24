@@ -30,6 +30,9 @@
 <style scoped>
 .main{
   text-align: center;
-  font-size: 24px;
+
 }
+  a{
+    font-size: 24px;
+  }
 </style>
