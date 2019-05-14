@@ -1,3 +1,6 @@
+# とりあえず
+以前vue.jsでポートフォリオサイトを公開していましたが，現状の開発タスクと学習コストを考え，一度こちらをクローズし，別リポジトリにてポートフォリオサイトを作成することにしました．
+
 # STATIC
 
 **This directory is not required, you can delete it if you don't want to use it.**
